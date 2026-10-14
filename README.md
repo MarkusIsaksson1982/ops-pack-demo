@@ -32,7 +32,7 @@ python -m ops_pack demo --backend fake --at 2026-10-15T09:00:00     # full pipel
 python -m ops_pack eval --backend ollama:llama3.2:3b --out results.json
 python -m ops_pack demo --db ops.db --backend fake && python -m ops_pack approve --db ops.db --id chat:c1 --approver sam@company.example
 python -m ops_pack dq --db ops.db                                     # schedule nightly (cron / CI)
-python -m unittest discover -s tests -t .                            # 13 tests, no network
+python -m unittest discover -s tests -t .                            # 14 tests, no network
 ```
 
 ### Model backends (`--backend`)

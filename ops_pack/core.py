@@ -315,3 +315,28 @@ def dq(db: sqlite3.Connection, at: str | None = None) -> dict:
 def summary(db: sqlite3.Connection) -> list[dict]:
     return [dict(r) for r in db.execute(
         "SELECT id, team, owner, sla_hours, routed_by, rule, status, duplicate_of FROM requests ORDER BY id")]
+
+
+def pending_classification(db: sqlite3.Connection) -> list[dict]:
+    """Requests in triage because no rule matched and no model was used: hand these to an agent (e.g. a chat bot)."""
+    return [{"id": r["id"], "text": f"{r['subject']}\n{r['body']}"[:2000]} for r in db.execute(
+        "SELECT id, subject, body FROM requests WHERE routed_by='fallback' AND reason='no rule, no model' ORDER BY id")]
+
+
+def apply_classification(db: sqlite3.Connection, request_id: str, answer, rules: dict = DEFAULT_RULES) -> dict:
+    """Apply an externally produced classification (agent or human). Same schema and confidence bar as `route`;
+    approval status is recomputed from the request itself, never taken from the answer."""
+    r = db.execute("SELECT * FROM requests WHERE id=?", (request_id,)).fetchone()
+    if not r or r["routed_by"] != "fallback":
+        return {"ok": False, "id": request_id, "error": "not a triage request"}
+    obj = parse_model_json(answer) if isinstance(answer, str) else answer
+    errs = validate(obj) if obj is not None else ["no JSON object"]
+    if errs or obj["confidence"] < rules["min_confidence"]:
+        return {"ok": False, "id": request_id, "error": "; ".join(errs) or "low confidence"}
+    team = obj["team"]
+    status = "pending_approval" if needs_approval(r, rules) else "routed"
+    db.execute("UPDATE requests SET team=?, owner=?, sla_hours=?, routed_by='agent', confidence=?, reason=?, status=? WHERE id=?",
+               (team, rules["default_owner"][team], rules["default_sla"][team], obj["confidence"], obj["reason"], status, request_id))
+    _audit(db, request_id, "classify", {"team": team, "by": "agent", "status": status})
+    db.commit()
+    return {"ok": True, "id": request_id, "team": team, "status": status}

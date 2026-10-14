@@ -119,5 +119,16 @@ class Pipeline(unittest.TestCase):
         self.assertFalse(c.valid)
 
 
+class AgentHandoff(unittest.TestCase):
+    def test_pending_and_apply(self):
+        db, _, _ = setup_db(None)
+        ids = [p["id"] for p in core.pending_classification(db)]
+        self.assertEqual(ids, ["chat:c10", "email:m8", "tracker:t4"])
+        self.assertTrue(core.apply_classification(db, "email:m8", '{"team":"finance","confidence":0.9,"reason":"double charge"}')["ok"])
+        self.assertEqual(row(db, "email:m8")["status"], "pending_approval")     # money -> still needs a human
+        self.assertFalse(core.apply_classification(db, "tracker:t4", {"team": "sales", "confidence": 0.9, "reason": "x"})["ok"])
+        self.assertFalse(core.apply_classification(db, "chat:c1", {"team": "legal", "confidence": 0.9, "reason": "x"})["ok"])  # rule-routed
+
+
 if __name__ == "__main__":
     unittest.main()
