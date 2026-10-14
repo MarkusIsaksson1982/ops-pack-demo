@@ -1,0 +1,984 @@
+[
+ {
+  "backend": "codex",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 3.99,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.64,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 3.99,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 3.49,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 3.28,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 3.24,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 2.96,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 3.14,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.96,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 4.64,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.2,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.22,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 3.26,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "grok-build",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 6.4,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 6.15,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.23,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.68,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 11.83,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 6.51,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 6.81,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.58,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 6.08,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.88,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 11.66,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 7.22,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 6.4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "ollama:llama3.2:3b",
+  "n": 12,
+  "accuracy": 0.833,
+  "schema_valid": 0.917,
+  "median_latency_s": 2.65,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 61.68,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 2.67,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.94,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.41,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": true,
+    "team": "bizops",
+    "want": "legal",
+    "latency_s": 2.39,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 2.52,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 2.34,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 2.65,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 2.23,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.01,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 1.69,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 2.43,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   }
+  ]
+ },
+ {
+  "backend": "ollama:qwen2.5:1.5b",
+  "n": 12,
+  "accuracy": 0.25,
+  "schema_valid": 0.333,
+  "median_latency_s": 1.35,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.79,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": true,
+    "team": "finance",
+    "want": "legal",
+    "latency_s": 1.14,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 1.12,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 1.13,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "legal",
+    "latency_s": 1.23,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 1.39,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "finance",
+    "latency_s": 1.33,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "legal",
+    "latency_s": 1.35,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 4.11,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 1.06,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "legal",
+    "latency_s": 4.92,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 3.25,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   }
+  ]
+ },
+ {
+  "backend": "ollama:gemma2:2b",
+  "n": 12,
+  "accuracy": 0.583,
+  "schema_valid": 0.583,
+  "median_latency_s": 1.75,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "finance",
+    "latency_s": 8.66,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 3.56,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "bizops",
+    "latency_s": 1.64,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "finance",
+    "latency_s": 2.73,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 1.49,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 2.02,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "finance",
+    "latency_s": 1.75,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 1.61,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 1.6,
+    "errors": []
+   },
+   {
+    "ok": false,
+    "valid": false,
+    "team": null,
+    "want": "finance",
+    "latency_s": 1.79,
+    "errors": [
+     "team not in ['finance', 'legal', 'bizops']"
+    ]
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 1.45,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 1.51,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "opencode:big-pickle",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 5.9,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.98,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.48,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.75,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.9,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.91,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 9.31,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.92,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.35,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.24,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 11.68,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.91,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 6.03,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "opencode:cat-jam-free",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 5.0,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.2,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.72,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.23,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.04,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.12,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 4.61,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.7,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.0,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.34,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.96,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.35,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 4.97,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "opencode:mimo-v2.6-flash-free",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 9.6,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 6.86,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 6.76,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 12.39,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 8.58,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 10.59,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 9.6,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 33.61,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 8.94,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 13.77,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 13.76,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 6.81,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 8.57,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "backend": "opencode:space-bunny-free",
+  "n": 12,
+  "accuracy": 1.0,
+  "schema_valid": 1.0,
+  "median_latency_s": 5.07,
+  "date": "2026-10-14",
+  "rows": [
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 6.45,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.07,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.09,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 4.4,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.92,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.32,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 3.91,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 5.15,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 4.71,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "finance",
+    "want": "finance",
+    "latency_s": 5.65,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "legal",
+    "want": "legal",
+    "latency_s": 4.8,
+    "errors": []
+   },
+   {
+    "ok": true,
+    "valid": true,
+    "team": "bizops",
+    "want": "bizops",
+    "latency_s": 5.05,
+    "errors": []
+   }
+  ]
+ }
+]

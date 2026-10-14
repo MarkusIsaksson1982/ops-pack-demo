@@ -1,0 +1,14 @@
+[
+ {"text": "We were charged twice for the same hosting plan this month; can someone get the extra money back?", "team": "finance"},
+ {"text": "A customer wants to cap our liability at twelve months of fees in clause 9. Is that acceptable?", "team": "legal"},
+ {"text": "Can we move the weekly operations sync to Thursdays and set up a shared doc for notes?", "team": "bizops"},
+ {"text": "How much did the team spend on travel last quarter compared with what was planned?", "team": "finance"},
+ {"text": "A partner asked whether they can reuse our logo in their own marketing material.", "team": "legal"},
+ {"text": "The office printer queue is broken again and nobody knows who maintains it.", "team": "bizops"},
+ {"text": "Our card was declined at the conference booth booking site, what should I do?", "team": "finance"},
+ {"text": "A user in Germany asks us to delete everything we store about them.", "team": "legal"},
+ {"text": "We need a checklist for when a new hire starts so laptops and tools are ready on day one.", "team": "bizops"},
+ {"text": "Payroll shows a different holiday pay amount than the employee expected.", "team": "finance"},
+ {"text": "Is it fine to record customer calls for training without telling them?", "team": "legal"},
+ {"text": "Two teams track the same customer list in different spreadsheets; can we have one source of truth?", "team": "bizops"}
+]
