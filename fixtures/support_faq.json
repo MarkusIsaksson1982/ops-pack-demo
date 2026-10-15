@@ -1,0 +1,12 @@
+[
+  {"id": "faq-1", "topic": "billing", "question": "How do I update my payment method?", "answer": "Open Settings → Billing → Payment methods. Add a card or bank account, then set it as default. Changes apply to the next invoice."},
+  {"id": "faq-2", "topic": "billing", "question": "When am I charged?", "answer": "Subscriptions renew on the same calendar day each month. You receive an invoice email 24 hours before renewal."},
+  {"id": "faq-3", "topic": "account", "question": "How do I reset my password?", "answer": "Use Forgot password on the login page. We email a one-time link that expires in 30 minutes. We never ask for your password by chat or phone."},
+  {"id": "faq-4", "topic": "account", "question": "Can I delete my account?", "answer": "Yes. Settings → Account → Delete. Data is removed within 30 days except records we must keep for legal compliance."},
+  {"id": "faq-5", "topic": "product", "question": "Does the mobile app support offline mode?", "answer": "Yes for reading cached items. Creating or editing items requires a connection; changes queue until you are online."},
+  {"id": "faq-6", "topic": "product", "question": "What browsers are supported?", "answer": "Current Chrome, Firefox, Safari and Edge. Internet Explorer is not supported."},
+  {"id": "faq-7", "topic": "security", "question": "Do you support two-factor authentication?", "answer": "Yes. Settings → Security → Two-factor. We support TOTP apps. SMS 2FA is not offered."},
+  {"id": "faq-8", "topic": "security", "question": "Where is my data stored?", "answer": "Primary region is EU (Stockholm). Backups are encrypted at rest. We do not sell personal data."},
+  {"id": "faq-9", "topic": "support", "question": "What are support hours?", "answer": "Chat support is 09:00–17:00 Europe/Stockholm on weekdays. Critical outages are monitored 24/7."},
+  {"id": "faq-10", "topic": "support", "question": "How do I escalate a ticket?", "answer": "In an open ticket, choose Escalate. Priority tickets get a human reply within four business hours."}
+]

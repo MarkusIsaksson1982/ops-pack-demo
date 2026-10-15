@@ -3,6 +3,7 @@
   python -m ops_pack eval --backend ollama:llama3.2:3b --backend opencode:big-pickle --out results.json
   python -m ops_pack approve --db ops.db --id tracker:t3 --approver sam@company.example
   python -m ops_pack dq --db ops.db
+  python -m ops_pack support-eval --backend fake --out results/support-eval.json
 """
 from __future__ import annotations
 
@@ -59,6 +60,16 @@ def cmd_approve(a):
     print(json.dumps(core.decide(db, a.id, a.approver, not a.reject)))
 
 
+
+def cmd_support_eval(a):
+    from . import support_rag
+    backend = (a.backend[0] if a.backend else "fake")
+    out = support_rag.run_eval_cli(backend)
+    if a.out:
+        Path(a.out).write_text(json.dumps(out, indent=1))
+    s = out["summary"]
+    print(f"| {s['backend']} | acc {s['accuracy']:.0%} | ground {s['groundedness']:.0%} | refuse_ok {s['refusal_ok']:.0%} | med {s['median_latency_ms']} ms | cost {s['total_cost_units']} |")
+
 def cmd_dq(a):
     print(json.dumps(core.dq(core.connect(a.db), a.at)))
 
@@ -75,8 +86,9 @@ def main(argv=None):
     s = sp.add_parser("approve"); s.add_argument("--db", required=True); s.add_argument("--id", required=True)
     s.add_argument("--approver", required=True); s.add_argument("--reject", action="store_true")
     s = sp.add_parser("dq"); s.add_argument("--db", required=True); s.add_argument("--at")
+    s = sp.add_parser("support-eval"); s.add_argument("--backend", action="append", default=[]); s.add_argument("--out")
     a = p.parse_args(argv)
-    {"demo": cmd_demo, "eval": cmd_eval, "approve": cmd_approve, "dq": cmd_dq}[a.cmd](a)
+    {"demo": cmd_demo, "eval": cmd_eval, "approve": cmd_approve, "dq": cmd_dq, "support-eval": cmd_support_eval}[a.cmd](a)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,93 @@
+{
+ "summary": {
+  "n": 8,
+  "accuracy": 1.0,
+  "groundedness": 1.0,
+  "refusal_ok": 1.0,
+  "median_latency_ms": 0.11,
+  "total_cost_units": 0.0,
+  "backend": "fake"
+ },
+ "rows": [
+  {
+   "id": "e1",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.24,
+   "cost_units": 0.0,
+   "detail": "faq-1,faq-2,faq-3"
+  },
+  {
+   "id": "e2",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.13,
+   "cost_units": 0.0,
+   "detail": "faq-3,faq-6,faq-9"
+  },
+  {
+   "id": "e3",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.11,
+   "cost_units": 0.0,
+   "detail": "faq-5,faq-1,faq-2"
+  },
+  {
+   "id": "e4",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.12,
+   "cost_units": 0.0,
+   "detail": "faq-7,faq-2,faq-5"
+  },
+  {
+   "id": "e5",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.0,
+   "cost_units": 0.0,
+   "detail": "refuse"
+  },
+  {
+   "id": "e6",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.0,
+   "cost_units": 0.0,
+   "detail": "refuse"
+  },
+  {
+   "id": "e7",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.01,
+   "cost_units": 0.0,
+   "detail": "refuse"
+  },
+  {
+   "id": "e8",
+   "backend": "fake",
+   "correct": true,
+   "grounded": true,
+   "refused_ok": true,
+   "latency_ms": 0.1,
+   "cost_units": 0.0,
+   "detail": "faq-10,faq-9,faq-1"
+  }
+ ]
+}
